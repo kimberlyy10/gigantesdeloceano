@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ballenas</title>
+    <link rel="stylesheet" href="estiloss.css" />
+    <!-- Ícono de pestaña -->
+    <link rel="shortcut icon" href="./images/icono_blue.png" />
+    <!-- Librería de íconos fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/b27db9185f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navegación, isotipo -->
+    <header>
+      <a href="index.html"><img src="images/icono_blue.png" alt="Logo" /></a>
+      <nav>
+        <ul class="navbar">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li><a class="activo" href="ballenas.html">Ballenas</a></li>
+          <li><a href="amenazas.html">Amenazas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="ballenas_main">
+      <section class="galeria_titulo">
+        <h2>GALERÍA DE BALLENAS</h2>
+        <hr />
+      </section>
+
+      <section class="galeria_contenedor">
+        <img src="galeria/foto0.jpg" alt="Ballena Albina" />
+
+        <img src="galeria/foto2.jpg" alt="Orca" />
+
+        <img src="galeria/foto3.jpg" alt="Tiburón Ballena" />
+
+        <img src="galeria/foto7.jpg" alt="Ballena Jorobada y cría" />
+
+        <img src="galeria/foto5.jpg" alt="Cachalote" />
+
+        <img src="galeria/foto4.jpg" alt="Ballena Jorobada" />
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Kimberly Martínez. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <!-- Script para obtener el año actual  -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
